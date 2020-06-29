@@ -1,0 +1,142 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+    "copyFormatting": true,
+    "experimental.rendering.software": true,
+    "showTerminalTitleInTitlebar": true,
+    
+    "profiles":
+    [
+        {
+            // Make changes here to the powershell.exe profile
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "cursorColor" : "#e5f504",
+            "cursorShape" : "bar",
+            "fontFace" : "Consolas",
+            "foreground": "#03f72c",
+            "fontSize" : 11,
+            "background":"#000c0f",
+            "backgroundImageOpacity": 0.1,
+            "name": "PowerShell",
+            "commandline": "powershell.exe",
+            // "backgroundImage": "C:/Users/Kusha/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/RoamingState/power.jpg",
+            "startingDirectory" : "D:/WorkPad/Python"
+        }
+        ,
+         
+        // {
+        //     "guid": "{0c6a7fbe-dbb7-4ef8-ae03-60cdfd3f07f6}",
+        //     "hidden": false,
+        //     "name": "Anaconda",
+        //     "icon" : "C:/Users/Kusha/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/RoamingState/anaconda.ico",
+        //     "commandline": "%windir%//System32//cmd.exe //K C://ProgramData//Anaconda3//Scripts//activate.bat C://ProgramData//Anaconda3",
+        //     "fontFace" : "cascadia code",
+        //     "foreground": "#00a100",
+        //     "fontSize": 10.5,
+        //     "startingDirectory" : "D://Athena//CSE//Course Gtech"
+    
+        // },
+        {
+            "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+            "hidden": false,
+            "name": "Ubuntu-20.04",
+            "backgroundImage": "C:/Users/Kusha/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/RoamingState/Ubuntu1.jpg",
+            "icon": "C:/Users/Kusha/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/RoamingState/ubuntuicon.png",
+            "source": "Windows.Terminal.Wsl",
+            "fontFace" : "CascadiaCode",
+            "fontSize": 12,
+            "startingDirectory" : "D:/WSL",
+            "backgroundImageOpacity": 0.1,
+            "cursorShape": "vintage",
+            "tabTitle": "Ubuntu 20.04",
+            "padding": "8, 8, 8, 8",
+            // "experimental.retroTerminalEffect": false,
+            "foreground": "#eff302",
+            "acrylicOpacity": 0.1,
+            "useAcrylic": true,
+            "scrollbarState": "visible",
+            "snapOnInput": true,
+            "colorScheme": "Vintage"
+
+        },
+        {
+            // Make changes here to the cmd.exe profile
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "Command Prompt",
+            "commandline": "cmd.exe",
+            "hidden": false,
+            "fontFace" : "consolas",
+            "foreground": "#df0606",
+            "backgroundImage": "C:/Users/Kusha/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/RoamingState/com.jpg",
+            "fontSize": 11,
+            "startingDirectory" : "D:/WorkPad/Python"
+        },
+        {
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": false,
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure"
+        }
+        
+    ],
+
+    // Add custom color schemes to this array
+    "schemes": [],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": 
+    [
+        { "command": "closePane", "keys": [ "ctrl+shift+w" ] },
+        { "command": "closeWindow", "keys": [ "alt+f4" ] },
+        { "command": "copy", "keys": [ "ctrl+c" ] },
+        { "command": "decreaseFontSize", "keys": [ "ctrl+-" ] },
+        { "command": "duplicateTab", "keys": [ "ctrl+d" ] },
+        { "command": "increaseFontSize", "keys": [ "ctrl+=" ] },
+        { "command": { "action": "moveFocus", "direction": "down" }, "keys": [ "alt+down" ] },
+        { "command": { "action": "moveFocus", "direction": "left" }, "keys": [ "alt+left" ] },
+        { "command": { "action": "moveFocus", "direction": "right" }, "keys": [ "alt+right" ] },
+        { "command": { "action": "moveFocus", "direction": "up" }, "keys": [ "alt+up" ] },
+        { "command": "newTab", "keys": [ "ctrl+shift+t" ] },
+        { "command": { "action": "newTab", "index": 0 }, "keys": ["ctrl+shift+1"] },
+        { "command": { "action": "newTab", "index": 1 }, "keys": ["ctrl+shift+2"] },
+        { "command": { "action": "newTab", "index": 2 }, "keys": ["ctrl+shift+3"] },
+        { "command": { "action": "newTab", "index": 3 }, "keys": ["ctrl+shift+4"] },
+        { "command": { "action": "newTab", "index": 4 }, "keys": ["ctrl+shift+5"] },
+        { "command": { "action": "newTab", "index": 5 }, "keys": ["ctrl+shift+6"] },
+        { "command": { "action": "newTab", "index": 6 }, "keys": ["ctrl+shift+7"] },
+        { "command": { "action": "newTab", "index": 7 }, "keys": ["ctrl+shift+8"] },
+        { "command": { "action": "newTab", "index": 8 }, "keys": ["ctrl+shift+9"] },
+        { "command": "nextTab", "keys": [ "ctrl+tab" ] },
+        { "command": "openNewTabDropdown", "keys": [ "ctrl+shift+space" ] },
+        { "command": "openSettings", "keys": [ "ctrl+," ] },
+        { "command": "paste", "keys": [ "ctrl+shift+v" ] },
+        { "command": "prevTab", "keys": [ "ctrl+shift+tab" ] },
+        { "command": "resetFontSize", "keys": ["ctrl+0"]},
+        { "command": { "action": "resizePane", "direction": "down" }, "keys": [ "alt+shift+down" ] },
+        { "command": { "action": "resizePane", "direction": "left" }, "keys": [ "alt+shift+left" ] },
+        { "command": { "action": "resizePane", "direction": "right" }, "keys": [ "alt+shift+right" ] },
+        { "command": { "action": "resizePane", "direction": "up" }, "keys": [ "alt+shift+up" ] },
+        { "command": "scrollDown", "keys": [ "ctrl+shift+down" ] },
+        { "command": "scrollDownPage", "keys": [ "ctrl+shift+pgdn" ] },
+        { "command": "scrollUp", "keys": [ "ctrl+shift+up" ] },
+        { "command": "scrollUpPage", "keys": [ "ctrl+shift+pgup" ] },
+        { "command": "splitHorizontal", "keys": [ "alt+shift+-" ] },
+        { "command": "splitVertical", "keys": [ "alt+shift+plus" ] },
+        { "command": { "action": "switchToTab", "index": 0 }, "keys": ["ctrl+alt+1"] },
+        { "command": { "action": "switchToTab", "index": 1 }, "keys": ["ctrl+alt+2"] },
+        { "command": { "action": "switchToTab", "index": 2 }, "keys": ["ctrl+alt+3"] },
+        { "command": { "action": "switchToTab", "index": 3 }, "keys": ["ctrl+alt+4"] },
+        { "command": { "action": "switchToTab", "index": 4 }, "keys": ["ctrl+alt+5"] },
+        { "command": { "action": "switchToTab", "index": 5 }, "keys": ["ctrl+alt+6"] },
+        { "command": { "action": "switchToTab", "index": 6 }, "keys": ["ctrl+alt+7"] },
+        { "command": { "action": "switchToTab", "index": 7 }, "keys": ["ctrl+alt+8"] },
+        { "command": { "action": "switchToTab", "index": 8 }, "keys": ["ctrl+alt+9"] },
+        { "command": "toggleFullscreen", "keys": [ "alt+enter" ] },
+        { "command": "toggleFullscreen", "keys": [ "f11" ] }
+    ]
+}
